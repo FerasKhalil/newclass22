@@ -6,7 +6,7 @@ import React, { PureComponent } from 'react'
     {
         return (
             <div>
-                <h1>CLASS 1</h1>
+                <h1>CLASS 2</h1>
             </div>
         )
     }
