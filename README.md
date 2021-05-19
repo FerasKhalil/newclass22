@@ -70,12 +70,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-Number and name of feature: ________________________________
+Number and name of feature: ______Lab: Class 02__________________________
 
 Estimate of time needed to complete: __a day___
 
-Start time: __2:35pm___
+Start time: __2:35___
 
-Finish time: _____
+Finish time: _4:20pm____
 
-Actual time needed to complete: _____
+Actual time needed to complete: _almost 2 hours____
