@@ -6,7 +6,7 @@ import React, { PureComponent } from 'react'
     {
         return (
             <div>
-                <p>Author : Firas Hasan</p>
+                <p>Author : Firas Hasan </p>
             </div>
         )
     }
