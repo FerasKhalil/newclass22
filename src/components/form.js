@@ -1,12 +1,12 @@
-/*import React, { PureComponent } from 'react'
-import Form from 'react-bootstrap/Form' 
+import React, { PureComponent } from 'react';
+import Form from 'react-bootstrap/Form'; 
 
 
 class FormInfo extends PureComponent 
 {
     updateForm = (event) =>{
         let value = event.target.value;
-        this.props.updateForm(value);
+        this.props.updateMain(value);
     }
     render()
     {
@@ -31,4 +31,4 @@ class FormInfo extends PureComponent
 
 }
 
-export default FormInfo;*/
+export default FormInfo;
