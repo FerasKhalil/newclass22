@@ -4,15 +4,15 @@ import React, { PureComponent } from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
 import Main from './components/main';
-import data from './components/hornedJess.json'; 
+import jsonData from './components/hornedJess.json'; 
 
 
  class App extends PureComponent
 {   constructor(props)
-    {
+    {//the second one is the one imported
         super(props);
         this.state={
-            data: data
+            data: jsonData
         }
     }
     render()
@@ -20,7 +20,7 @@ import data from './components/hornedJess.json';
         return (
           <div>
             <Header></Header>
-            <Main data={this.state.data}></Main>
+            <Main passingData={this.state.data}></Main>
             <Footer></Footer>
             </div>
         )
