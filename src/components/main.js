@@ -11,7 +11,7 @@ import  CardColumns  from 'react-bootstrap/CardColumns';
             <CardColumns>
                 <div>
 
-                    {this.props.data.map(item =>{
+                    {this.props.passingData.map(item =>{
                         return(
                             <HornedBeast
                             title={item.title}

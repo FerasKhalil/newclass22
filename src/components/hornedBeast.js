@@ -60,7 +60,8 @@ handleClose=()=>{
                         
                     </Card.Body>
                 </Card>
-                <selectedBeast
+                
+                <SelectedBeast
                 show = {this.state.show}
                 handleClose={this.handleClose}
                 likesCounter={this.state.counter}
@@ -68,9 +69,10 @@ handleClose=()=>{
                 title={this.state.title}
                 description={this.state.description}
                 />
+                
 
             </div>
-        )
+        )//we pass to selected beast which is hornedbeast child
     }
 }
 
