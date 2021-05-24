@@ -2,13 +2,14 @@ import React, { PureComponent } from 'react';
 import HornedBeast from './hornedBeast';
 import CardColumns from 'react-bootstrap/CardColumns';
 import FormInfo from './form';
+import { Container, Row, Col } from 'react-bootstrap';
 
 
 class Main extends PureComponent {
     constructor(props) {
         super(props);
         this.state = {
-            changedArr: this.props.beastInfo
+            changedArr: this.props.jsonData
         }
     }
 
@@ -16,26 +17,28 @@ class Main extends PureComponent {
     updateMain = (value) => {
         let filteredArr = [];
         if (value != 'all') {
-            filteredArr = this.props.beastInfo.filter((item) => {
+            filteredArr = this.props.jsonData.filter((item) => {
                 if (item.horns == value) {
                     return item;
                 }
             })
         }
         else {
-            filteredArr = this.props.beastInfo;
+            filteredArr = this.props.jsonData;
         }
-        this.state({
+        this.setState({
             changedArr: filteredArr,
-        })
-    }
-    render() {
+        });
+    };
+
+
+  render() {
         return (
 
             <div>
 
                 <FormInfo
-                    updateStateInsideMain={this.updateStateInsideMain}
+                    updateMain={this.updateMain}
                 />
                 <CardColumns>
                     {this.state.changedArr.map((item, index) => {
@@ -50,14 +53,12 @@ class Main extends PureComponent {
             
 
                     )} )}
-
-
                 </CardColumns>
-            </div>
-          <div>
+         {/* </div> */}
+
+          {/* <div> */}
             <CardColumns>
             
-
             {this.props.passingData.map((item) => {
                 return (
                     <HornedBeast
@@ -74,13 +75,60 @@ class Main extends PureComponent {
              </div>
         )
     }
-        
+
 }
-    
+
+export default Main;
+//     render() {
+//         return (
+
+//             <div>
+
+//                 <FormInfo
+//                     updateMain={this.updateMain}
+//                 />
+//                 <CardColumns>
+//                     {this.state.changedArr.map((item, index) => {
+//                         return (
+//                             <HornedBeast
+//                                 title={item.title}
+//                                 imageUrl={item.image_url}
+//                                 description={item.description}
+//                                 key={item}
+//                                 showStuffFromMain={this.props.showStuffFromApp}
+//                             />
+            
+
+//                     )} )}
+//                 </CardColumns>
+//          {/* </div> */}
+
+//           {/* <div> */}
+//             <CardColumns>
+            
+//             {this.props.passingData.map((item) => {
+//                 return (
+//                     <HornedBeast
+//                         title={item.title}
+//                         imgUrl={item.image_url}
+//                         description={item.description}
+//                     />
+//                 )
+//             }
+
+//             )}
+             
+//              </CardColumns>
+//              </div>
+//         )
+//     }
+
+// }
+
 //     )
 
 //     }
-    
+
 // }}
 // }
 
@@ -142,4 +190,3 @@ class Main extends PureComponent {
 // </div>
 //         )
 //     }
-export default Main;
