@@ -1,7 +1,6 @@
 import React, { PureComponent } from 'react';
 import Form from 'react-bootstrap/Form'; 
 
-
 class FormInfo extends PureComponent 
 {
     updateForm = (event) =>{
@@ -11,6 +10,7 @@ class FormInfo extends PureComponent
     render()
     {
         return(
+            <div>
             <Form>
                 <Form.Group controlId="exampleForm.SelectCustom">
                 <Form.Label>Custom Select</Form.Label>
@@ -26,6 +26,7 @@ class FormInfo extends PureComponent
 
                 </Form.Group>
             </Form>
+            </div>
         )
     }
 
