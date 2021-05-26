@@ -27,7 +27,7 @@ import  CardColumns  from 'react-bootstrap/CardColumns';
         )
     }
 }
-
+export default Main;
 // constructor(props)
 //     {
 //         super(props);
@@ -86,4 +86,4 @@ import  CardColumns  from 'react-bootstrap/CardColumns';
 //             </div>
 //         )
 //     }
-export default Main;
+
