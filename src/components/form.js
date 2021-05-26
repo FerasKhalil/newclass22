@@ -1,16 +1,16 @@
-/*import React, { PureComponent } from 'react'
-import Form from 'react-bootstrap/Form' 
-
+import React, { PureComponent } from 'react';
+import Form from 'react-bootstrap/Form'; 
 
 class FormInfo extends PureComponent 
 {
     updateForm = (event) =>{
         let value = event.target.value;
-        this.props.updateForm(value);
+        this.props.updateMain(value);
     }
     render()
     {
         return(
+            <div>
             <Form>
                 <Form.Group controlId="exampleForm.SelectCustom">
                 <Form.Label>Custom Select</Form.Label>
@@ -26,9 +26,10 @@ class FormInfo extends PureComponent
 
                 </Form.Group>
             </Form>
+            </div>
         )
     }
 
 }
 
-export default FormInfo;*/
+export default FormInfo;
