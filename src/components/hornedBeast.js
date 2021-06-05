@@ -76,4 +76,5 @@ handleClose=()=>{
     }
 }
 
+
 export default HornedBeasts;
